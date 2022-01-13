@@ -25,13 +25,43 @@ nav ul {
 
 main {
     margin: 3vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.outer_section{
+    width: 450px;
+    margin: 10px;
+    border: solid 1px grey;
+    display: flex;
+}
+
+section img{
+    font-size: 16px;
+    width: 50%;
+}
+
+section p, section h2{
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
 @media only screen and (max-width: 1000px) {
     /* Media queries go here */
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section{
+        width: calc(50% - 20px);
+    }
 }
 
 @media only screen and (max-width: 600px) {
     /* Media queries go here */
+    section{
+        width: calc(100% - 20px);
+    }
 }
